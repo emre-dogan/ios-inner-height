@@ -66,7 +66,8 @@ module.exports = (function () {
 		var ruler = document.createElement('div');
 
 		ruler.style.position = 'fixed';
-		ruler.style.height = '100vh';
+		ruler.style.minHeight = '100vh';
+		ruler.style.minHeight = '-webkit-fill-available';
 		ruler.style.width = 0;
 		ruler.style.top = 0;
 
